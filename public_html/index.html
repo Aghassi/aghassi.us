@@ -3,7 +3,7 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="David Aghassi" />
-	<meta name="Copyright 2014" />
+	<meta name="Copyright 2015" />
 	<title>David Aghassi</title>
 	
 	<!-- BootStrap -->
@@ -15,13 +15,38 @@
 
 	<!-- Ensure propper rendering on mobile -->
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-	<style type="text/css">
-	</style>
 </head>
+<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-target=".bs-navbar-collapse" data-toggle="collapse" type="button">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Aghassi</a>
+		</div>
+		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		      <ul class="nav navbar-nav" id="navigation-tabs">
+		        <li>
+		          <a href="projects.html">Projects</a>
+		        </li>
+		        <li>
+		          <a href="/Documents/Resume/Aghassi_Resume.pdf" target="_blank">Resume</a>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-right" ng-controller="socialLinksController">
+		      	<li>
+		      		<a ng-repeat="socialLink in socialLinks" class="navbar-brand" href="{{socialLink.sourceLink}}">
+		      			<i class="fa fa-{{socialLink.site}}-square"></i>
+		      		</a>
+	      		</li>
+		      </ul>
+		</nav>
+	</div>
+</header>
 <body>
-	<navbar current-tab="Aghassi"></navbar>
-
 	<div class="container">
 		<div class="starter-template" ng-controller='bioController'>
 			<div ng-repeat='field in fields'>
@@ -42,9 +67,6 @@
 	<!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
     
-    <!--Directives-->
-    <script defer src="angular/directives/navbar.js"></script>
-	
 	<!--Controllers-->
 	<script defer src="angular/bioController.js"></script>
 	<script defer src="angular/socialLinksController.js"></script>
