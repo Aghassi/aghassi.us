@@ -1,0 +1,28 @@
+body{
+	padding-top: 50px;
+}
+
+.bio{
+	text-align: left;
+}
+
+.major{
+	text-align: left;
+}
+.name{
+	text-align: left;
+}
+
+.photo{
+	float: left;
+	width: 290px;
+	max-width: 90%;
+	border: 4px solid;
+	border-color: #df691a;
+	margin-right: 10px
+}
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainPageApp">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="David Aghassi" />
+	<meta name="Copyright 2014" />
+	<title>David Aghassi</title>
+	
+	<!-- BootStrap -->
+	<link defer href="css/Superhero/bootstrap.min.css" rel="stylesheet" />
+	<link defer href="css/starter-template.css" rel="stylesheet" />
+
+	<!--Font Awesome-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Ensure propper rendering on mobile -->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<navbar current-tab="Aghassi"></navbar>
+
+	<div class="container">
+		<div class="starter-template" ng-controller='bioController'>
+			<div ng-repeat='field in fields'>
+				<img class="img-responsive img-circle photo " src="images/photos/headshot.png">
+				<ul class="list-unstyled">
+					<h1 class="name">{{field.name}}</h1>
+					<h3 class="major">{{field.major}}</h3>
+					<p class="bio lead">{{field.bio}}</p>
+				</ul>			
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap core JavaScript================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script defer src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+    
+    <!--Directives-->
+    <script defer src="angular/directives/navbar.js"></script>
+	
+	<!--Controllers-->
+	<script defer src="angular/bioController.js"></script>
+	<script defer src="angular/socialLinksController.js"></script>
+
+</body>
+</html>

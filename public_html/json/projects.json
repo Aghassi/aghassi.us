@@ -1,0 +1,17 @@
+[
+	{
+         "photo": "/images/photos/iphoneApp.png",
+         "title": "Find My Bus NJ",
+         "description": "App for tracking NJ Transit's bus times",
+         "link": "http://www.findmybusnj.com",
+         "readMore": "Visit Site"
+	},
+	{
+		"photo": "/images/photos/cwruswingclub.jpg",
+		"title": "CWRU Swing Club",
+		"description": "Mobile first, responsive website for the CWRU Swing Club",
+		"link": "http://usg.case.edu/org/cwruswingclub",
+		"readMore": "Visit Site" 
+	}
+    
+]
