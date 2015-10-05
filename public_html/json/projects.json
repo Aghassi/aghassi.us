@@ -6,11 +6,18 @@
          "link": "http://www.findmybusnj.com",
          "readMore": "Visit Site"
 	},
+    {
+        "photo": "/images/photos/cwruswingclub.jpg",
+        "title": "CWRU Swing Club",
+        "description": "Mobile first, responsive website for the CWRU Swing Club",
+        "link": "http://cwru.edu/swingclub",
+        "readMore": "Visit Site" 
+    },
 	{
-		"photo": "/images/photos/cwruswingclub.jpg",
-		"title": "CWRU Swing Club",
-		"description": "Mobile first, responsive website for the CWRU Swing Club",
-		"link": "http://cwru.edu/swingclub",
+		"photo": "/images/photos/notify.png",
+		"title": "Notify",
+		"description": "Spotify and iTunes Notification Center app",
+		"link": "https://github.com/Aghassi/Notify",
 		"readMore": "Visit Site" 
 	}
 ]
